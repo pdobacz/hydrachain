@@ -92,7 +92,7 @@ As long as a node is locked it must not vote for another block on H.  A node is 
 
  - it is NotLocked (i.e. it had not seen a valid proposal and timed out in the previous round) or
  - it received a VoteInstruction (which proves that +1/3 of the nodes are already locked on a different block)
-
+ - it received a valid proposal H,R with a NoQuorum(R-1) LockSet, for R > R0
 
 Nodes must vote in every round (e.g. repeating older votes but signed for the new round)
 
